@@ -69,15 +69,22 @@
         </h1>
 
         <div> 
-            <img class="ingressos" id="quinta" src="quinta.svg">
-            <img class="ingressos" id="sexta" src="sexta.svg">
-            <img class="ingressos" id="sabado" src="sabado.svg">
-            <img class="ingressos" id="domingo" src="domingo.svg">
+            <img class="ingressos" onclick="selectCard('#quinta')" onmouseover="highlightCard('#quinta')" onmouseout="highlightCard('#quinta')" id="quinta" src="quinta.svg">
+            <img class="ingressos" onclick="selectCard('#sexta')" onmouseover="highlightCard('#sexta')" onmouseout="highlightCard('#sexta')" id="sexta" src="sexta.svg">
+            <img class="ingressos" onclick="selectCard('#sabado')" onmouseover="highlightCard('#sabado')" onmouseout="highlightCard('#sabado')" id="sabado" src="sabado.svg">
+            <img class="ingressos" onclick="selectCard('#domingo')" onmouseover="highlightCard('#domingo')" onmouseout="highlightCard('#domingo')" id="domingo" src="domingo.svg">
         </div>
         
-        <button>GARANTA O SEU!</button>
+        <button onclick="showSelectedCards()">GARANTA O SEU!</button>
     </div>
 
+    <div id="form">
+        <form action="https://www.google.com">
+            <input type="email" placeholder="Seu email" required/>
+            <input type="submit"/>
+        </form>
+    </div>
     <script src="script.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

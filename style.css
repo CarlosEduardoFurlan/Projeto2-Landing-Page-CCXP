@@ -214,3 +214,27 @@ button:hover{
     cursor: pointer;
     color: yellow;
 }
+
+.card-highlight{
+    box-shadow: 10px 10px 10px 10px grey;
+}
+
+.card-selected{
+    border: 5px solid green;
+}
+
+input{
+    background: #514988;
+    border-radius: 10px;
+    border-style: none;
+    color: #FFFFFF;
+    margin: 30px;
+    width: 300px;
+    height: 70px;
+    font-size: 30px;
+}
+
+form{
+    margin-top: 1100px;
+    background-color: #FFD900;
+}
